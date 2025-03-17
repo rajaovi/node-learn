@@ -67,14 +67,14 @@ The event loop operates in several phases:
 6. **Close:** Executes callbacks for closed connections, such as socket.on('close', ...).
 
 #### Single Thread
-- **Single Thread:** Node.js uses a single thread to execute JavaScript code
-- **Blocking:** If a thread is blocked, it can't execute other tasks
+**Single Thread:** Node.js uses a single thread to execute JavaScript code
+**Blocking:** If a thread is blocked, it can't execute other tasks
 
 ## [:top:](#table-of-concepts)
 
 #### Streams & Buffers
-- **Stream:** A stream is a sequence of data that is read or written in a continuous flow
-- **Buffer:** A buffer is a contiguous block of memory used to store data
+**Stream:** A stream is a sequence of data that is read or written in a continuous flow
+**Buffer:** A buffer is a contiguous block of memory used to store data
 
 #### Types of Errors
 - **Syntax Error:** Error in the code
@@ -94,6 +94,11 @@ Alternative to express js:
 - Koa.js
 - Sails.js
 
-.use()
-.send()
-.listen()
+- **.use()** is a method that adds a middleware function to the request-response cycle.
+- **.send()** is a method that sends a response back to the client.
+- **.listen()** is a method that starts the server and begins listening for incoming requests. 
+
+#### Body Parser
+**Body Parser:** A middleware that parses the request body and makes it available in the request object 
+
+.urlencoded() - parses URL encoded data
