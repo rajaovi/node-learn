@@ -103,3 +103,6 @@ Alternative to express js:
 **Body Parser:** A middleware that parses the request body and makes it available in the request object 
 
 .urlencoded() - parses URL encoded data
+
+#### Router 
+**Router:** A router is a middleware that maps URLs to specific routes
