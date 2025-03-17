@@ -85,3 +85,15 @@ The event loop operates in several phases:
 - **Range Error:** Error that occurs when a value is out of range
 - **Reference Error:** Error that occurs when a variable is not defined
 
+#### Express JS
+Express .js is a popular Node.js web framework that provides a flexible way to handle HTTP requests and responses.
+
+Alternative to express js:
+- Vanilla Node.js 
+- Adonis.js
+- Koa.js
+- Sails.js
+
+.use()
+
+
