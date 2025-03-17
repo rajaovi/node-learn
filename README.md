@@ -97,6 +97,7 @@ Alternative to express js:
 - **.use()** is a method that adds a middleware function to the request-response cycle.
 - **.send()** is a method that sends a response back to the client.
 - **.listen()** is a method that starts the server and begins listening for incoming requests. 
+- **.get() - .post() - .put() - .delete() - .all() - .param()**
 
 #### Body Parser
 **Body Parser:** A middleware that parses the request body and makes it available in the request object 
