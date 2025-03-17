@@ -4,7 +4,9 @@
   "description": "Complete node js learn",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/rajaovi/node-learn/issues"
   },
-  "homepage": "https://github.com/rajaovi/node-learn#readme"
+  "homepage": "https://github.com/rajaovi/node-learn#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }

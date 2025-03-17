@@ -76,5 +76,12 @@ The event loop operates in several phases:
 - **Stream:** A stream is a sequence of data that is read or written in a continuous flow
 - **Buffer:** A buffer is a contiguous block of memory used to store data
 
-
+#### Types of Errors
+- **Syntax Error:** Error in the code
+- **Runtime Error:** Error that occurs during execution
+- **Logical Error:** Error in the logic of the code
+- **Reference Error:** Error that occurs when a variable is not defined
+- **Type Error:** Error that occurs when a variable is of the wrong type
+- **Range Error:** Error that occurs when a value is out of range
+- **Reference Error:** Error that occurs when a variable is not defined
 
