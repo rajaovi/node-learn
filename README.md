@@ -106,3 +106,6 @@ Alternative to express js:
 
 #### Router 
 **Router:** A router is a middleware that maps URLs to specific routes
+
+#### Path
+**Path:** A path is a string that represents a URL
