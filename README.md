@@ -97,15 +97,27 @@ Alternative to express js:
 - **.use()** is a method that adds a middleware function to the request-response cycle.
 - **.send()** is a method that sends a response back to the client.
 - **.listen()** is a method that starts the server and begins listening for incoming requests. 
+- **.set()** - allow to set any values globally on out express application
 - **.get() - .post() - .put() - .delete() - .all() - .param()**
+
+## [:top:](#table-of-concepts)
 
 #### Body Parser
 **Body Parser:** A middleware that parses the request body and makes it available in the request object 
 
 .urlencoded() - parses URL encoded data
 
+## [:top:](#table-of-concepts)
+
 #### Router 
 **Router:** A router is a middleware that maps URLs to specific routes
 
 #### Path
 **Path:** A path is a string that represents a URL
+
+#### Available templating engines:
+**EJS** - use normal HTML and plain JS in you template - `<p><%= namer %></p>`
+**Pug[Jade]** - use minimal HTML and custom template lang - `p #{name}`
+**Handlebars** - use normal HTML and custom template lang - `<p>{{name}}</p>`
+
+## [:top:](#table-of-concepts)
