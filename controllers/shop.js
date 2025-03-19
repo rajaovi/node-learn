@@ -38,6 +38,25 @@ exports.getCart = (req, res, next) => {
   });
 };
 
+exports.postCart = (req, res, next) => {
+  const prodId = req.body.productId;
+  console.log(prodId);
+  res.redirect("/cart");
+  // Product.findById(prodId, (product) => {
+  //   const existingProduct = req.user.cart.find(
+  //     (item) => item.productId === prodId
+  //   );
+  //   if (existingProduct) {
+  //     existingProduct.quantity++;
+  //   } else {
+  //     req.user.cart.push({ productId: prodId, product: product, quantity: 1 });
+  //   }
+  //   req.user.save((err) => {
+  //     res.redirect("/cart");
+  //   });
+  // });
+};
+
 exports.getOrders = (req, res, next) => {
   res.render("shop/orders", {
     path: "/orders",
