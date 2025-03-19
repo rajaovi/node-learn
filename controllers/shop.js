@@ -1,4 +1,5 @@
 const Product = require("../models/product");
+const Cart = require("../models/cart");
 
 exports.getProducts = (req, res, next) => {
   Product.fetchAll((products) => {
@@ -40,21 +41,10 @@ exports.getCart = (req, res, next) => {
 
 exports.postCart = (req, res, next) => {
   const prodId = req.body.productId;
-  console.log(prodId);
+  Product.findById(prodId, (product) => {
+    Cart.addProduct(prodId, product?.price);
+  });
   res.redirect("/cart");
-  // Product.findById(prodId, (product) => {
-  //   const existingProduct = req.user.cart.find(
-  //     (item) => item.productId === prodId
-  //   );
-  //   if (existingProduct) {
-  //     existingProduct.quantity++;
-  //   } else {
-  //     req.user.cart.push({ productId: prodId, product: product, quantity: 1 });
-  //   }
-  //   req.user.save((err) => {
-  //     res.redirect("/cart");
-  //   });
-  // });
 };
 
 exports.getOrders = (req, res, next) => {
