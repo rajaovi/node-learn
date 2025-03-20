@@ -122,3 +122,9 @@ Alternative to express js:
 **Handlebars** - use normal HTML and custom template lang - `<p>{{name}}</p>`
 
 ## [:top:](#table-of-concepts)
+
+#### Horizontal & Vertical scale
+
+
+#### SQL
+createPool - 
