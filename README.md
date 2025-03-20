@@ -128,3 +128,6 @@ Alternative to express js:
 
 #### SQL
 createPool - 
+
+#### Sequelize
+Sequelize is a popular ORM (Object-Relational Mapping) tool for Node.js that provides a simple and intuitive way to interact with databases. 
